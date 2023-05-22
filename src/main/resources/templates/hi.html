@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<body ng-app="">
+<th>
+<form>
+    <h1>Question: <h2> If I were offered the job, I think I ____________ it.</h2></h1>
+    <input type="radio" ng-model="myVar" value="A1">take
+    <input type="radio" ng-model="myVar" value="B1">will take
+    <input type="radio" ng-model="myVar" value="C1">would take
+</form>
+
+<div ng-switch="myVar">
+    <div ng-switch-when="A1">
+        <p>Incorrect</p>
+    </div>
+    <div ng-switch-when="B1">
+        <p>Incorrect</p>
+    </div>
+    <div ng-switch-when="C1">
+        <p>Correct</p>
+    </div>
+</div>
+</th>
+
+</body>
+</html>
